@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/customrect_suave"
+    >
+
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView_ciudad"
+        android:background="@drawable/customrect_suave"
+
+
+        />
+    <Button
+        android:background="@drawable/botonapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver info"
+        android:layout_toRightOf="@+id/imageView_ciudad"
+        android:layout_toEndOf="@+id/imageView_ciudad"
+        android:id="@+id/button_verinfo"
+        />
+    <TextView
+        android:padding="5dp"
+        android:background="@drawable/customrect_suave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Info test"
+        android:id="@+id/infociudad"
+        android:layout_below="@+id/button_verinfo"
+        android:layout_alignRight="@+id/button_verinfo"
+        android:layout_alignEnd="@+id/button_verinfo"
+        android:layout_alignBottom="@+id/imageView_ciudad"
+        android:layout_toRightOf="@+id/imageView_ciudad"
+        android:layout_toEndOf="@+id/imageView_ciudad" />
+</RelativeLayout>
